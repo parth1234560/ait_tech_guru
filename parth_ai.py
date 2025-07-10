@@ -1,7 +1,7 @@
 import streamlit as st
 from openai import OpenAI
 
-st.subheader("2.🧠Parth's Generative AI Projects")
+st.subheader("🧠Parth's Generative AI Projects")
 
 x = st.selectbox(
     "🧠 How do you want AI to work for you?",
