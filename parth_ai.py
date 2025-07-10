@@ -50,7 +50,7 @@ else:
 
 # Set up model
 gemini_model = OpenAI(
-    api_key=key,
+    api_key=st.secrets["key"],
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 )
 
