@@ -22,7 +22,7 @@ x = st.selectbox(
 
 st.markdown(f"### ✨ You selected: `{x}`")
 
-
+# Set system_prompt based on selection
 if "Tech Guru" in x:
     system_prompt = "🧑‍💻 Expert in tech, coding, AI, ML. Help with clear answers, debug, and guidance."
 elif "Love Guru" in x:
@@ -74,3 +74,17 @@ if st.button("🚀 Submit"):
     with st.container():
         st.markdown(f"""
         <div style="
+                background-color: #1e1e1e;
+                padding: 20px;
+                border-radius: 15px;
+                border: 2px solid #2196F3;
+                box-shadow: 0 0 10px rgba(33, 150, 243, 0.3);
+                color: white;
+                font-size: 16px;
+            ">
+                🤖 <b>AI Response:</b><br><br>
+                {ai_response}
+        </div>
+        """, unsafe_allow_html=True)
+else:
+    st.warning("Please enter a question before submitting.")
